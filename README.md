@@ -7,15 +7,15 @@ bit rot over the years.  You should use those as the tutorial to get a sense
 for how things should work.  This example shows a minimal working solution as
 of November of 2021.  You can see the example in action at:
 
-http://something...
+https://gregbuchholz.github.io/
 
 You will need [Emscipten](https://emscripten.org/) installed and you path
 updated to point to the installation (Unix-like: `source ~/emsdk/emsdk_env.sh`
 or on Windows: `emsdk_env.bat`).
 
 Grab this repository:
-    
-    git clone https://
+
+    git clone https://github.com/gregbuchholz/RuSDLem
 
 One or both of the Emscripten targets will need to be added to your Rust setup:
 
