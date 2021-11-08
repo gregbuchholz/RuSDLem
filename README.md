@@ -10,7 +10,7 @@ ironed out.  You can see the example in action at:
 
 https://gregbuchholz.github.io/
 
-You will need [Emscipten](https://emscripten.org/) installed and you path
+You will need [Emscipten](https://emscripten.org/) installed and your path
 updated to point to the installation (Unix-like: `source ~/emsdk/emsdk_env.sh`
 or on Windows: `emsdk_env.bat`).
 
@@ -33,7 +33,7 @@ One or both of the Emscripten targets will need to be added to your Rust setup:
     em++ -c gxx_personality_v0_stub.c
 
 ...in the `src/` directory to produce a stub `gxx_personality_v0_stub.o` in
-`src/`.  The build the project with:
+`src/`.  Then build the project with:
 
     cargo build --target=wasm32-unknown-emscripten --release
 
