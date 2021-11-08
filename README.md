@@ -2,10 +2,11 @@
 
 There are a number of tutorials out there with the goal of showing how to use
 Rust and the [SDL2](https://github.com/Rust-SDL2/rust-sdl2) graphics library to
-build program with a web target.  Unfortunately, most of them have developed
-bit rot over the years.  You should use those as the tutorial to get a sense
-for how things should work.  This example shows a minimal working solution as
-of November of 2021.  You can see the example in action at:
+build programs with a web target.  Unfortunately, most of them have developed
+bit rot over the years.  You should use those as the tutorial to get a general
+sense for how things should work.  This example shows a minimal working
+solution as of November of 2021, with the quirks of getting it to compile
+ironed out.  You can see the example in action at:
 
 https://gregbuchholz.github.io/
 
