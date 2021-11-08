@@ -1,0 +1,9 @@
+[package]
+name = "rusdlem"
+version = "0.1.0"
+edition = "2018"
+license = "BSD-3-Clause"
+
+[dependencies]
+sdl2 = "0.35.0"
+
