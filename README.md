@@ -44,7 +44,7 @@ One or both of the Emscripten targets will need to be added to your Rust setup:
 
     emrun index-wasm.html
 
-...which should start you web browser and bring up a page with the newly
+...which should start a web browser and bring up a page with the newly
 compiled instance.  Or use the following if you are interested in asmjs...
 
     cargo build --target=asmjs-unknown-emscripten --release
