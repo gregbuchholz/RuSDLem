@@ -73,7 +73,7 @@ into Emscripten that this alleviates.  With all the back buffers, etc, it
 doesn't take much to reach this limit.
 
 `ASYNCIFY` enables
-[Ansyncify](https://emscripten.org/docs/porting/asyncify.html), which for this
+[Asyncify](https://emscripten.org/docs/porting/asyncify.html), which for this
 example has strategic calls to `emscripten_sleep()` which enables the browser's
 main loop to have control periodically and this means we don't have to deal
 with `set_main_loop` and friends.  You'll also notice the:
