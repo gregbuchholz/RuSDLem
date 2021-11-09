@@ -1,18 +1,20 @@
 # RuSDLem - A minimal Rust program using SDL2 to target Emscripten and the web 
 
 There are a number of tutorials out there with the goal of showing how to use
-Rust and the [SDL2](https://github.com/Rust-SDL2/rust-sdl2) graphics library to
-build programs with a web target.  Unfortunately, most of them have developed
-bit rot over the years.  You should use those tutorials as the guide to get a
-general sense for how things should work.  This example shows a minimal working
-solution as of November of 2021, with the quirks of getting it to compile
-ironed out.  You can see the example in action at:
+Rust and its [SDL2 bindings](https://github.com/Rust-SDL2/rust-sdl2) graphics
+library to build programs with a web target.  Unfortunately, most of them have
+developed bit rot over the years.  You should use those tutorials as the guide
+to get a general sense for how things should work.  This example shows a
+minimal working solution as of November of 2021, with the quirks of getting it
+to compile ironed out.  You can see the example in action at:
 
 https://gregbuchholz.github.io/
 
-You will need [Emscipten](https://emscripten.org/) installed and your path
-updated to point to the installation (Unix-like: `source ~/emsdk/emsdk_env.sh`
-or on Windows: `emsdk_env.bat`).
+[Emscipten](https://emscripten.org/) installed and your path updated to point
+to the installation (Unix-like: `source ~/emsdk/emsdk_env.sh` or on Windows:
+`emsdk_env.bat`).  If you want to run SDL programs locally, you will also need
+the [SDL2](https://www.libsdl.org/download-2.0.php) libraries installed.
+Emscripten already has the SDL2 libraries included for its own internal use.
 
 Grab this repository:
 
@@ -37,11 +39,12 @@ One or both of the Emscripten targets will need to be added to your Rust setup:
 
     cargo build --target=wasm32-unknown-emscripten --release
 
-..and then run a web server with:
+..and finally run a web server with:
 
     emrun index-wasm.html
 
-...or use the following if you are interested in asmjs...
+...which should start you web browser and bring up a page with the newly
+compiled instance.  Or use the following if you are interested in asmjs...
 
     cargo build --target=asmjs-unknown-emscripten --release
     emrun index-asmjs.html
