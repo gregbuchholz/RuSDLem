@@ -10,6 +10,10 @@ to compile ironed out.  You can see the example in action at:
 
 https://gregbuchholz.github.io/
 
+Hover over large grey square with the blue diagonal line, and you should see a
+red line drawn from the upper left corner of the canvas to where the mouse
+cursor is.
+
 You will need [Emscipten](https://emscripten.org/) installed and your path
 updated to point to the installation (Unix-like: `source emsdk_env.sh`
 or on Windows: `emsdk_env.bat` in your emscripten folder).  If you want to
