@@ -10,10 +10,11 @@ to compile ironed out.  You can see the example in action at:
 
 https://gregbuchholz.github.io/
 
-[Emscipten](https://emscripten.org/) installed and your path updated to point
-to the installation (Unix-like: `source ~/emsdk/emsdk_env.sh` or on Windows:
-`emsdk_env.bat`).  If you want to run SDL programs locally, you will also need
-the [SDL2](https://www.libsdl.org/download-2.0.php) libraries installed.
+You will need [Emscipten](https://emscripten.org/) installed and your path
+updated to point to the installation (Unix-like: `source emsdk_env.sh`
+or on Windows: `emsdk_env.bat` in your emscripten folder).  If you want to
+run SDL programs locally, you will also need the
+[SDL2](https://www.libsdl.org/download-2.0.php) libraries installed.
 Emscripten already has the SDL2 libraries included for its own internal use.
 
 Grab this repository:
