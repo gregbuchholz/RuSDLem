@@ -78,7 +78,7 @@ doesn't take much to reach this limit.
 
 `ASYNCIFY` enables
 [Asyncify](https://emscripten.org/docs/porting/asyncify.html), which for this
-example has strategic calls to `emscripten_sleep()` which enables the browser's
+example has [strategic calls](https://wiki.libsdl.org/SDL_HINT_EMSCRIPTEN_ASYNCIFY) to `emscripten_sleep()` which enables the browser's
 main loop to have control periodically and this means we don't have to deal
 with `set_main_loop` and friends.  You'll also notice the:
 
